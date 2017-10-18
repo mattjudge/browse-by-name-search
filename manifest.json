@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "Google Browse by Name search engine",
+  "description": "Adds a search engine that searches Google using its Browse by Name feature",
+  "version": "1.0",
+  "applications": {
+    "gecko": {
+      "strict_min_version": "55.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Browse by Name",
+      "search_url": "https://www.google.com/search?sourceid=navclient&gfns=1&q={searchTerms}",
+      "keyword": "bbn",
+      "favicon_url": "https://www.google.com/favicon.ico",
+      "is_default": false
+    }
+  }
+
+} 
